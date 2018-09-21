@@ -5,7 +5,7 @@ Donate link: http://premiumaddons.com
 Requires at least: 4.5
 Tested up to: 4.9.8
 Requires PHP: 5.4
-Stable tag: 2.6.3
+Stable tag: 2.6.6
 License: GPL v3.0
 License URI: https://opensource.org/licenses/GPL-3.0
 
@@ -134,6 +134,20 @@ Premium Addons for Elementor is 100% Ads Free, Ads can only be detected from You
 14. Premium Progress Bar Widget for Elementor
 
 == Changelog ==
+
+= 2.6.6 =
+
+- Tweak: Premium Image Button widget performance enhanced.
+
+= 2.6.5 =
+
+- Tweak: Premium Button widget performance enhanced.
+- Fixed: Modal Box responsive issues.
+
+= 2.6.4 =
+
+- Tweak: Premium Dual Heading widget performance enhanced.
+- Fixed: Modal Box overlay issue.
 
 = 2.6.3 =
 

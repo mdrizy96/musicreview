@@ -1010,7 +1010,7 @@ span.icon.flex-width {
 a.premium-image-separator-link:hover,
 a.premium-image-separator-link:visited,
 a.premium-image-separator-link:focus,
-a.premium-image-separator-link:active{
+a.premium-image-separator-link:active {
     box-shadow: none !important;
     outline: none !important;
     border: none !important;
@@ -1022,7 +1022,7 @@ a.premium-image-separator-link:active{
 /**************** Premium Modal Box ****************/
 /***************************************************/
 .premium-modal-box-button-selector,
-.premium-modal-box-modal-lower-close{
+.premium-modal-box-modal-lower-close {
     display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
@@ -1086,6 +1086,7 @@ button.premium-modal-box-modal-close {
     -webkit-overflow-scrolling: touch;
     outline: 0;
     padding: 0 !important;
+    background: rgba(0,0,0,0.5) /*Added New to fix backdrop background*/
 }
 .premium-modal-box-modal .premium-modal-box-modal-dialog {
     position: absolute;
@@ -1178,15 +1179,6 @@ button.premium-modal-box-modal-close {
 .premium-modal-box-text-selector {
     background: none !important;
 }
-@media (min-width:768px) {
-    .premium-modal-box-modal-dialog {
-        width: 600px;
-    }
-    .premium-modal-box-modal-content {
-        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
-    }
-}
 .premium-modal-box-container {
     width: 100% !important;
 }
@@ -1236,6 +1228,22 @@ button.premium-modal-box-modal-close {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+@media (min-width:768px) {
+    .premium-modal-box-modal-dialog {
+        width: 600px;
+    }
+    .premium-modal-box-modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+    }
+}
+@media (max-width:767px) {
+    .premium-modal-box-modal-dialog {
+        width: 100%;
+        max-height: 500px;
+        overflow: scroll;
+    }
 }
 /**************** Premium Progress Bar ****************/
 /******************************************************/

@@ -212,7 +212,7 @@ if (typeof jQuery === 'undefined') {
 
       this.$backdrop = $(document.createElement('div'))
         .addClass('premium-modal-backdrop ' + animate)
-        .appendTo(this.$body)
+//        .appendTo(this.$body)
 
       this.$element.on('click.dismiss.bs.modal', $.proxy(function (e) {
         if (this.ignoreBackdropClick) {

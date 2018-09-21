@@ -12,7 +12,7 @@
     };
     //Premium Progress Bar on Scroll Handler
     var PremiumProgressBarScrollWidgetHandler = function ($scope,$){
-      $scope.waypoint(function (direction) {
+        elementorFrontend.waypoint($scope, function (direction) {
             PremiumProgressBarWidgetHandler($(this), $);
         }, {
             offset: $.waypoints('viewportHeight') - 150,

@@ -3,7 +3,7 @@
 Plugin Name: Premium Addons for Elementor
 Description: Premium Addons Plugin Includes 20 premium widgets for Elementor Page Builder.
 Plugin URI: https://premiumaddons.com
-Version: 2.6.3
+Version: 2.6.6
 Author: Leap13
 Author URI: http://leap13.com/
 Text Domain: premium-addons-for-elementor
@@ -22,12 +22,12 @@ if (!function_exists('add_action')) {
 if (!defined('ABSPATH')) exit; // No access of directly access
 
 
-define('PREMIUM_ADDONS_VERSION', '2.6.3');
+define('PREMIUM_ADDONS_VERSION', '2.6.6');
 define('PREMIUM_ADDONS_URL', plugins_url('/', __FILE__));
 define('PREMIUM_ADDONS_PATH', plugin_dir_path(__FILE__));
 define('PREMIUM_ADDONS_FILE', __FILE__);
 define('PREMIUM_ADDONS_BASENAME', plugin_basename(__FILE__));
-define('PREMIUM_ADDONS_STABLE_VERSION', '2.6.2');
+define('PREMIUM_ADDONS_STABLE_VERSION', '2.6.5');
 
 /**
  * Loading text domain, Including required files
@@ -376,7 +376,6 @@ class premium_Addon_Elementor {
         
         if ($check_component_active['premium-progressbar']) {
             wp_register_script('premium-addons-js', PREMIUM_ADDONS_URL . 'assets/js/premium-addons.js', array('jquery'), PREMIUM_ADDONS_VERSION, true);
-            wp_register_script('waypoints', PREMIUM_ADDONS_URL . 'assets/js/lib/jquery.waypoints.js', array('jquery'), PREMIUM_ADDONS_VERSION, true);
         }
         if ($check_component_active['premium-videobox']) {
             wp_register_script('premium-addons-js', PREMIUM_ADDONS_URL . 'assets/js/premium-addons.js', array('jquery'), PREMIUM_ADDONS_VERSION, true);
@@ -388,7 +387,6 @@ class premium_Addon_Elementor {
         }
         if ($check_component_active['premium-counter']) {
             wp_register_script('counter-up-js', PREMIUM_ADDONS_URL . 'assets/js/lib/countUpmin.js', array('jquery'), PREMIUM_ADDONS_VERSION, true);
-            wp_register_script('waypoints', PREMIUM_ADDONS_URL . 'assets/js/lib/jquery.waypoints.js', array('jquery'), PREMIUM_ADDONS_VERSION, true);
         }
         if ($check_component_active['premium-fancytext']) {
             wp_register_script('vticker-js', PREMIUM_ADDONS_URL . 'assets/js/lib/Vticker.js', array('jquery'), PREMIUM_ADDONS_VERSION, true);
